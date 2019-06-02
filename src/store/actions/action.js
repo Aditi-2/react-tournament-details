@@ -1,4 +1,4 @@
-import * as types from './ActionTypes.js';
+import * as types from './ActionTypes.js'
 
 export const requestPost = () => ({
     type: types.REQUEST_POSTS
@@ -19,17 +19,12 @@ export const fetchData = () => {
             .then(json => dispatch(receivePosts(json)))
     }
 }
-export const getDataSeries = (id) => {
-    return dispatch => {
-        dispatch(fetchData());
-        dispatch(fetchSeries(id));
-    }
-}
+
 export const filterList = (keyword) => ({
     type: types.FILTER_LIST,
     keyword
 })
-export const viewdetails = (id) => ({
+export const viewDetails = (id) => ({
     id,
-    type: types.VIEWDETAILS
-});
+    type: types.VIEW_DETAILS
+})

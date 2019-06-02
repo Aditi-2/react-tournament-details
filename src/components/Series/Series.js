@@ -1,13 +1,11 @@
-import React, { Component } from 'react';
-import './Series.css';
+import React, { Component } from 'react'
+import './Series.css'
 
 
 class Series extends Component{
     componentWillMount() {
         if(this.props.posts.series.length == 0){
-            console.log(this.props.match.params.id);
-            console.log(this.props.posts.items.length);
-            this.props.showSeries(this.props.match.params.id);
+            this.props.goToHome()
         }
     }
     render(){

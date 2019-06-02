@@ -1,5 +1,5 @@
-import { connect } from 'react-redux';
-import Table from '../components/Table/Table';
+import { connect } from 'react-redux'
+import Table from '../components/Table/Table'
 import { push } from 'connected-react-router'
 import { fetchData, fetchSeries, filterList } from '../store/actions/action'
 
@@ -12,12 +12,11 @@ export default connect(
       dispatch(fetchData())
     },
     showSeries: (id) => {
-        dispatch(fetchSeries(id));
-        dispatch(push(`/view-series/${id}`));
+        dispatch(fetchSeries(id))
+        dispatch(push(`/view-series/${id}`))
     },
     searchData: (search) => {
-        console.log(search.keyword);
-        dispatch(filterList(search.keyword));
+        dispatch(filterList(search.keyword))
     }
     })
 )(Table) 

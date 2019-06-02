@@ -1,5 +1,5 @@
-export const RECEIVE_POSTS = 'RECEIVE_POSTS';
-export const REQUEST_POSTS = 'REQUEST_POSTS';
-export const VIEWDETAILS = 'VIEWDETAILS';
-export const FETCH_SERIES = 'FETCH_SERIES';
-export const FILTER_LIST = 'FILTER_LIST';
+export const RECEIVE_POSTS = 'RECEIVE_POSTS'
+export const REQUEST_POSTS = 'REQUEST_POSTS'
+export const VIEW_DETAILS = 'VIEW_DETAILS'
+export const FETCH_SERIES = 'FETCH_SERIES'
+export const FILTER_LIST = 'FILTER_LIST'

@@ -1,4 +1,4 @@
-import * as types from '../actions/ActionTypes';
+import * as types from '../actions/ActionTypes'
 
 const initialState = {
     isFetching: false,
@@ -17,7 +17,7 @@ const reducer = (state = initialState, action) => {
                 isFetching: false,
                 items: action.posts
             })
-        case types.VIEWDETAILS: 
+        case types.VIEW_DETAILS: 
             return Object.assign({}, state, {
                 isFetching: false,
                 items: action.posts
@@ -25,7 +25,7 @@ const reducer = (state = initialState, action) => {
         case types.FETCH_SERIES:
             const selectedSeries = state.items.filter(item => {
                 if(item.id == action.id){
-                    return item.series;
+                    return item.series
                 }
             })
             return Object.assign({}, state, {
@@ -35,8 +35,8 @@ const reducer = (state = initialState, action) => {
             const filteredItems  = state.items.filter(item => {
                
                 if((item.id.toString().indexOf(action.keyword) > -1) || (item.date_start.toString().indexOf(action.keyword) > -1) || (item.date_end.toString().indexOf(action.keyword) > -1)){
-                    console.log(item);
-                    return item;
+                    console.log(item)
+                    return item
                 }
             })
             return Object.assign({}, state, {

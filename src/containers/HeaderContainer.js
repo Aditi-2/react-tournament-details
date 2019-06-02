@@ -1,6 +1,6 @@
-import { connect } from 'react-redux';
-import Header from '../components/Header/Header';
-import push from 'connected-react-router';
+import { connect } from 'react-redux'
+import Header from '../components/Header/Header'
+import push from 'connected-react-router'
 
 
 export default connect(
@@ -10,5 +10,5 @@ export default connect(
     dispatch => ({
 
     })
-)(Header);
+)(Header)
 

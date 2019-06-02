@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
-import { Field, Form } from 'react-redux-form';
-import './Table.css';
+import React, { Component } from 'react'
+import { Field, Form } from 'react-redux-form'
+import './Table.css'
 
 class Table extends Component {
     componentWillMount() {
         if (!this.props.posts.items.length) {
-            this.props.fetchData();
+            this.props.fetchData()
         }
     }
     render() {
@@ -39,8 +39,8 @@ class Table extends Component {
          <tbody>
         {
             this.props.posts.items.map((item, i) => {
-                let startDate = item.date_start.split(' ');
-                let endDate = item.date_end.split(' ');
+                let startDate = item.date_start.split(' ')
+                let endDate = item.date_end.split(' ')
                return ( 
                    <tr key={i}>
                     <th scope="row">{item.id}</th>
