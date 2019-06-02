@@ -4,7 +4,7 @@ import './Series.css'
 
 class Series extends Component{
     componentWillMount() {
-        if(this.props.posts.series.length == 0){
+        if(this.props.posts.series.length === 0){
             this.props.goToHome()
         }
     }
